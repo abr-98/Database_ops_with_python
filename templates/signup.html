@@ -1,0 +1,40 @@
+<html>  
+<head>  
+<title>Form</title>  
+</head>  
+<body>  
+<p>Details form</p> 
+<p>Welcome {{name}}</p> 
+</body> 
+<form action="/personal_info" method="POST", enctype="multipart/form-data">
+
+         <input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+         <label>Name</label>
+         <input type="text" id="Name" name="Name" placeholder=" Your name">
+         <br>
+         <label>From</label>
+         <input type="text" id="From" name="From" placeholder="Where are you From">
+         <br>
+         <label>Education</label>
+         <input type="text" id="Education" name="Education" placeholder="Your Education">
+         <br>
+         <label>Profession</label>
+         <input type="text" id="Profession" name="Profession" placeholder="Your Profession">
+         <br>
+         <label>Current location</label>
+         <input type="text" id="location" name="location" placeholder="Current location">
+         <br>
+         <label>Birthday</label>
+         <input type="text" id="Birthday" name="Birthday" placeholder="Your Birthday">
+         <br>
+
+         <dl>
+         <p>
+      <input type="file" name="file" autocomplete="off" required>
+      </p>
+         </dl>
+
+        <button type="submit">Submit</button>
+
+      </form> 
+</html>  
