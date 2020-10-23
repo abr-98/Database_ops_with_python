@@ -1,0 +1,30 @@
+<html>  
+<head>  
+<title>Home</title>  
+</head>  
+<body>   
+<p>User: {{name}} 
+<br>
+<br>
+<p>Add Friend</p>
+<form action="/add_fr" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">Add Friend</button>
+</form> 
+<br>
+<p>Create Post</p>
+<form action="/create" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">Create post</button>
+</form> 
+<br>
+<p>Feed</p>
+<form action="/feed" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">View Feed</button>
+</form> 
+<br>
+<p>View Friends</p>
+<form action="/view_fr" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">View Friends</button>
+</form> 
+
+</body>
+</html>  
