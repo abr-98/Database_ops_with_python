@@ -1,0 +1,53 @@
+<html>  
+<head>  
+<title>Add Friends</title>  
+</head>  
+<body> 
+<p>Welcome: {{name}}</p>
+<br>
+<br>
+<p>Your top suggestions are:</p>
+<br>
+<br>
+<p> 1. {{pred_1}}</p>
+<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<input type="hidden" name="con_name", id='con_name',value={{pred_1}}>
+<button type="submit">Connect</button>
+
+<p> 2. {{pred_2}}</p>
+<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<input type="hidden" name="con_name", id='con_name',value={{pred_2}}>
+<button type="submit">Connect</button>
+
+<p> 3. {{pred_3}}</p>
+<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<input type="hidden" name="con_name", id='con_name',value={{pred_3}}>
+<button type="submit">Connect</button>
+
+<p> 4. {{pred_4}}</p>
+<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<input type="hidden" name="con_name", id='con_name',value={{pred_4}}>
+<button type="submit">Connect</button>
+
+
+<p> 5. {{pred_5}}</p>
+<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<input type="hidden" name="con_name", id='con_name',value={{pred_5}}>
+<button type="submit">Connect</button>
+
+<p>Search Your Freinds</p>
+</body>
+<form action="/search" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<label>Search</label>
+<input type="text" name="search", id='search',placeholder="Enter the search user id">
+<button type="submit">Search</button>
+
+<p>Go back</p>
+
+<form action="/back" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">Go Back</button>
+</form> 
+</body>
+</html>  
+
+</html>  
