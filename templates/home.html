@@ -26,5 +26,18 @@
 <button type="submit">View Friends</button>
 </form> 
 
+<br>
+<p>View Requests</p>
+<form action="/see_req" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">Requests {{req}}</button>
+</form> 
+
+<br>
+<p>Log out</p>
+<form action="/logout" method="POST", enctype="multipart/form-data">
+<button type="submit">Log out</button>
+</form> 
+
+
 </body>
 </html>  

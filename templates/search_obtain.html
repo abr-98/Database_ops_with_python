@@ -9,19 +9,19 @@
 <br>
 <p>Results</p>
 <br>
+<p>User Name: {{sr}}</p>
 <p>Name: {{na}}</p>
 <p>Address: {{ad}}</p>
 <p>Education: {{ed}}</p>
-<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
-<input type="hidden" name="con_name", id="con_name",value="{{sr}}">
+<form action="/connect" method="POST", enctype="multipart/form-data">
+<input type="hidden" name="usr_name" ,id="usr_name" value="{{nam}}">
+<input type="hidden" name="con_name" ,id="con_name" value="{{sr}}">
 <button type="submit">Connect</button>
-
-
 </form> 
 
 <p>Go back</p>
 
-<form action="/back" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<form action="/back" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{nam}}">
 <button type="submit">Go Back</button>
 </form> 
 

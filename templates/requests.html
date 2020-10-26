@@ -1,0 +1,32 @@
+<html>  
+<head>  
+<title>View Requests</title>  
+</head>  
+<body>   
+<p>User: {{name}} 
+<br>
+<br>
+<p>Requests</p>
+<br>
+<br>
+{%for i in range(0,le)%}
+	<p>User name: {{u_n[i]}}
+	<p>Name: {{n[i]}}</p>
+	<p>Address: {{l[i]}}</p>
+	<p>Education: {{e[i]}}</p>
+	<form action="/accept_fr" method="POST", enctype="multipart/form-data">
+	<input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+	<input type="hidden" name="con_name" ,id="con_name" value="{{u_n[i]}}">
+	<button type="submit">Accept</button>
+
+
+</form>
+{%endfor%} 
+<p>Go back</p>
+
+<form action="/back" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">Go Back</button>
+</form> 
+
+</body>
+</html>  

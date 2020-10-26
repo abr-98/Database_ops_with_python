@@ -7,34 +7,15 @@
 <br>
 <br>
 <p>Your top suggestions are:</p>
-<br>
-<br>
-<p> 1. {{pred_1}}</p>
-<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
-<input type="hidden" name="con_name", id='con_name',value={{pred_1}}>
-<button type="submit">Connect</button>
+{%for i in range(0,le)%}
+	<br>
+	<br>
+	<p> {{pred[i]}}</p>
+	<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+	<input type="hidden" name="con_name", id='con_name',value="{{pred[i]}}">
+	<button type="submit">Connect</button>
 
-<p> 2. {{pred_2}}</p>
-<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
-<input type="hidden" name="con_name", id='con_name',value={{pred_2}}>
-<button type="submit">Connect</button>
-
-<p> 3. {{pred_3}}</p>
-<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
-<input type="hidden" name="con_name", id='con_name',value={{pred_3}}>
-<button type="submit">Connect</button>
-
-<p> 4. {{pred_4}}</p>
-<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
-<input type="hidden" name="con_name", id='con_name',value={{pred_4}}>
-<button type="submit">Connect</button>
-
-
-<p> 5. {{pred_5}}</p>
-<form action="/connect" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
-<input type="hidden" name="con_name", id='con_name',value={{pred_5}}>
-<button type="submit">Connect</button>
-
+{%endfor%}
 <p>Search Your Freinds</p>
 </body>
 <form action="/search" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">

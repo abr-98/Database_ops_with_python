@@ -1,0 +1,26 @@
+<html>  
+<head>  
+<title>Add Friends</title>  
+</head>  
+<body> 
+<p>Welcome: {{name}}</p>
+<p> Friends</p>
+<br>
+<br>
+<p>Go back</p>
+
+<form action="/back" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">Go Back</button>
+</form> 
+
+{%for i in range(0,le)%}
+	<br>
+	<br>
+	<p>Name: {{n[i]}}</p>
+	<p>Address: {{l[i]}}</p>
+	<p>Education: {{e[i]}}</p>
+
+{%endfor%}
+
+</body>
+</html>
