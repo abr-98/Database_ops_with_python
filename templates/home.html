@@ -33,6 +33,16 @@
 </form> 
 
 <br>
+<p>View Profile</p>
+<form action="/view_prof" method="POST", enctype="multipart/form-data">
+<input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<input type="hidden" name="ref_name" ,id="ref_name" value="{{name}}">
+
+<button type="submit">View Profile</button>
+</form> 
+
+
+<br>
 <p>Log out</p>
 <form action="/logout" method="POST", enctype="multipart/form-data">
 <button type="submit">Log out</button>

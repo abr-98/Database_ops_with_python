@@ -1,0 +1,37 @@
+<html>  
+<head>  
+<title>Create Post</title>  
+</head>  
+<body> 
+<p>Welcome: {{name}}</p>
+<p> Post</p>
+<br>
+<br>
+<p>Go back</p>
+<form action="/back" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">Go Back</button>
+</form> 
+
+<br>
+<br>
+<form action="/get_post" method="POST", enctype="multipart/form-data">
+<input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<p>What's on your mind?</p>
+<br>
+<textarea rows = "8" cols = "60" name = "desc",id="desc">
+            Enter details here...
+         </textarea>
+<br>
+<dl>
+         <p>
+      <input type="file" name="file" autocomplete="off" multiple>
+      </p>
+         </dl>
+
+        <button type="submit">Submit</button>
+</form>
+</body>
+</html>
+
+
+

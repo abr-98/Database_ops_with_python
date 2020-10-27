@@ -1,0 +1,24 @@
+<html>  
+<head>  
+<title>Profile</title>  
+</head>  
+<body> 
+<p>Welcome: {{name}}</p>
+<p> Profile: User: {{n}}</p>
+<br>
+<br>
+<p>Go back</p>
+<form action="/back" method="POST", enctype="multipart/form-data"><input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+<button type="submit">Go Back</button>
+</form> 
+
+<br>
+<br>
+
+<img src="{{pic}}" alt="Profile Pic">
+<p>Name: {{doc[0]}}</p>
+<p>From: {{doc[1]}}</p>
+<p>Education: {{doc[2]}}</p>
+<p>Profession: {{doc[3]}}</p>
+<p>Location: {{doc[4]}}</p>
+<p>Birthday: {{doc[5]}}</p>

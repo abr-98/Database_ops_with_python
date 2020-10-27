@@ -19,6 +19,12 @@
 	<p>Name: {{n[i]}}</p>
 	<p>Address: {{l[i]}}</p>
 	<p>Education: {{e[i]}}</p>
+	<br>
+	<form action="/remove" method="POST", enctype="multipart/form-data">
+	<input type="hidden" name="usr_name" ,id="usr_name" value="{{name}}">
+	<input type="hidden" name="con_name" ,id="con_name" value="{{u_n[i]}}">
+	<button type="submit">Unfriend</button>
+	</form> 
 
 {%endfor%}
 
